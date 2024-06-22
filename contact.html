@@ -1,112 +1,55 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #1d1f21;
-    color: #c9d1d9;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Me - Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>My Portfolio</strong></li>
+        </ul>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+    <header class="hero">
+        <div class="container">
+            <h1>Contact Me</h1>
+            <p>This is the contact page of my portfolio.</p>
+        </div>
+    </header>
+    <main class="container">
+        <section>
+            <h2>Get in Touch</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-nav {
-    background-color: #161b22;
-    padding: 1rem 0;
-    border-bottom: 1px solid #30363d;
-}
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-nav a {
-    color: #c9d1d9;
-}
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
 
-.hero {
-    background: linear-gradient(45deg, #1e2a38, #161b22);
-    color: #fff;
-    padding: 4rem 0;
-    text-align: center;
-}
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
 
-.hero h1 {
-    font-size: 3rem;
-    margin: 0;
-}
-
-.hero p {
-    font-size: 1.25rem;
-    margin: 1rem 0 0;
-}
-
-main.container {
-    padding: 2rem 0;
-}
-
-footer {
-    padding: 2rem 0;
-    text-align: center;
-    border-top: 1px solid #30363d;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-h1, h2, h3 {
-    color: #58a6ff;
-}
-
-a {
-    color: #58a6ff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-section {
-    margin-bottom: 2rem;
-}
-
-button {
-    background-color: #238636;
-    color: #ffffff;
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #2ea043;
-}
-
-form {
-    display: grid;
-    gap: 1rem;
-}
-
-footer a {
-    display: inline-block;
-    margin: 0 0.5rem;
-}
-
-footer i {
-    margin-right: 0.5rem;
-}
-
-.skills {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.skills li {
-    background-color: #238636;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    margin: 0.5rem;
-    border-radius: 5px;
-}
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer class="container">
+        <small>
+            <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a> • 
+            <a href="#"><i class="fab fa-github"></i> GitHub</a>
+        </small>
+    </footer>
+</body>
+</html>
